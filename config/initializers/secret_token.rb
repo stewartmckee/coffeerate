@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-Coffeerate::Application.config.secret_token = '44805bbb4d56270449a74eb0d3a1521e8e18f8e4fdaa78f34f8edd0065ba4c5df6cf4e91d791c22563885fbe701583bd83eb6d12e2cf6ffea5cc203ea169fedd'
+Coffeerate::Application.config.secret_token = '3d34612fa0cfd0a3a276c8886265fdf7db8bead45bb631c1dabc07701e089df6851944d0d795d403999a709b0bd9e809a9edbf3d2d2edd9666ef36c963329fcf'
