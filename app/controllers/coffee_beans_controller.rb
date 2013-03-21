@@ -1,6 +1,8 @@
 class CoffeeBeansController < ApplicationController
   # GET /coffee_beans
   # GET /coffee_beans.json
+  before_filter :authenticate_user!
+  
   def index
     @coffee_beans = CoffeeBean.all
 
