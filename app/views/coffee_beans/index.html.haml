@@ -1,0 +1,21 @@
+%h1 Listing coffee_beans
+
+%table
+  %tr
+    %th Name
+    %th Overall Rating
+    %th
+    %th
+    %th
+
+  - @coffee_beans.each do |coffee_bean|
+    %tr
+      %td= coffee_bean.name
+      %td= rating_for coffee_bean, "overall", :read_only => true
+      %td= link_to 'Show', coffee_bean
+      %td= link_to 'Edit', edit_coffee_bean_path(coffee_bean)
+      %td= link_to 'Destroy', coffee_bean, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Coffee bean', new_coffee_bean_path

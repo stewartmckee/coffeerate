@@ -41,4 +41,7 @@ gem "devise"
 gem "haml", ">= 3.0.0"
 gem "haml-rails"
 gem "jquery-rails"
-gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
+gem "rspec-rails", ">= 2.0.1", :group => [:development, :test] 
+
+gem 'letsrate', :git => "git://github.com/stewartmckee/letsrate.git"
+gem 'simple_form'

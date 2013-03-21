@@ -1,0 +1,32 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @coffee_bean.name
+%p
+  %b Supplier:
+  = @coffee_bean.supplier_id
+%p
+  %b Description:
+  = @coffee_bean.description
+
+%p
+  %b Your Ratings
+
+  .rating-group
+    .rating
+      .name Overall: 
+      = rating_for @coffee_bean, "overall"
+    .rating
+      .name Flavour: 
+      = rating_for @coffee_bean, "flavour"
+    .rating
+      .name Aroma: 
+      = rating_for @coffee_bean, "aroma"
+    .rating
+      .name Bitterness: 
+      = rating_for @coffee_bean, "bitterness"
+
+= link_to 'Edit', edit_coffee_bean_path(@coffee_bean)
+\|
+= link_to 'Back', coffee_beans_path
