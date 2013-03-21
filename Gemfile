@@ -45,3 +45,5 @@ gem "rspec-rails", ">= 2.0.1", :group => [:development, :test]
 
 gem 'letsrate', :git => "git://github.com/stewartmckee/letsrate.git"
 gem 'simple_form'
+gem 'heroku'
+gem 'pg'
